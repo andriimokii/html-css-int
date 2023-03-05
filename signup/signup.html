@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="signup.css">
+    <title>Odin Signup Form</title>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">
+            <img src="assets/logo.png" alt="The Odin Project logo">
+            <p>ODIN</p>
+        </div>
+        <p class="photo-credit">Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/photos/25xggax4bSA">Unsplash</a></p>
+    </div>
+    <div class="main">
+        <div class="description">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. <br />
+                Sign up <em>now</em> to get started.</p>
+            <p>You <em>know</em> you want to.</p>
+        </div>
+
+        <div class="form-box">
+            <p>Let's do this!</p>
+            <form action="#">
+                <div class="form-row">
+                    <div class="form-element">
+                        <label for="first_name">first name</label>
+                        <input type="text" id="first_name" required>
+                    </div>
+                    <div class="form-element">
+                        <label for="last_name">last name</label>
+                        <input type="text" id="last_name" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-element">
+                        <label for="email">email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-element">
+                        <label for="phone_number">phone number</label>
+                        <input type="tel" id="phone_number" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-element">
+                        <label for="password">password</label>
+                        <input type="password" id="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
+                        <p class="error">* Passwords do not match</p>
+                    </div>
+                    <div class="form-element">
+                        <label for="password_confirm">confirm password</label>
+                        <input type="password" id="password_confirm" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$" required>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="account-exists">
+            <button type="submit">
+                create account
+            </button>
+            <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
+    </div>
+</body>
+</html>

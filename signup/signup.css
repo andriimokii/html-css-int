@@ -1,0 +1,148 @@
+@font-face {
+    font-family: norse-bold;
+    src: url(assets/Norse-Bold.woff);
+}
+
+* {
+    block-size: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    background-image: url("assets/leaf.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 35%;
+    height: 100vh;
+    position: relative;
+}
+
+.logo {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 150px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo > img {
+    height: 110px;
+}
+
+.logo > p {
+    font-size: 90px;
+    font-family: norse-bold, sans-serif;
+    color: #fff;
+}
+
+.main {
+    width: 65%;
+    background-color: #F9FAFB;
+}
+
+.description {
+    padding: 120px 0 30px 40px;
+    width: 700px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.description > p {
+    margin-bottom: 20px;
+}
+
+.form-box {
+    background-color: #fff;
+    padding: 20px 0 20px 50px;
+    box-shadow: 0 5px 10px #DADBDC;
+}
+
+.form-box > p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.form-row {
+    display: flex;
+}
+
+.form-element {
+    margin-right: 50px;
+    margin-top: 12px;
+}
+
+.form-element label {
+    text-transform: uppercase;
+    display: block;
+    letter-spacing: 2px;
+    color: #1F2937;
+}
+
+.form-element input {
+    border: 1px solid #E5E7EB;
+    border-radius: 4px;
+    width: 250px;
+    height: 30px;
+}
+
+input:focus {
+    border: 1px solid blue;
+    box-shadow: 5px 5px 10px #D3D3D3;
+}
+
+input[type="password"]:invalid {
+    border: 1px solid #B91C1C;
+}
+
+input[type="password"]:valid {
+    border: 1px solid limegreen;
+}
+
+.account-exists {
+    padding-top: 30px;
+    padding-left: 50px;
+}
+
+.account-exists a {
+    color: #596D48;
+    text-decoration-line: none;
+    font-weight: bold;
+}
+
+.account-exists button[type="submit"] {
+    background-color: #596D48;
+    color: white;
+    text-transform: capitalize;
+    padding: 10px 40px;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 0;
+    box-shadow: 5px 5px 10px #D3D3D3;
+    margin-bottom: 20px;
+}
+
+.form-box .error {
+    color: #B91C1C;
+}
+
+.photo-credit {
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.photo-credit > a {
+    color: white;
+}
